@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.myworkshopy.centerfinder"
+    namespace = "com.satnamapps.shapecenterfinder"
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.myworkshopy.centerfinder"
+        applicationId = "com.satnamapps.shapecenterfinder"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -19,7 +19,8 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isShrinkResources = true
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -53,6 +54,9 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
+
+    // Offline learned visual descriptors for similar-object counting.
+    implementation("com.google.mediapipe:tasks-vision:1.0.0")
 
     // OpenCV
     implementation("org.opencv:opencv:5.0.0.1")

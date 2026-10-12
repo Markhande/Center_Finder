@@ -13,3 +13,15 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Build outputs. GitHub rejects any file over 100 MB.
+*.apk
+*.aab
+*.ap_
+/app/build/
+/app/release/
+/opencv/build/
+
+# Signing keys stay on this machine.
+*.jks
+*.keystore

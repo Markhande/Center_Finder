@@ -1,0 +1,7 @@
+MobileNet V3 small image embedder (MediaPipe)
+Source: https://storage.googleapis.com/mediapipe-models/image_embedder/mobilenet_v3_small/float32/1/mobilenet_v3_small.tflite
+Documentation: https://ai.google.dev/edge/mediapipe/solutions/vision/image_embedder
+Downloaded: 2026-10-11
+SHA-256: bbbb4c51a55a53905af1daec995ca1aae355046f8839bb8c9f5ce9271394bc40
+The model's embedded metadata identifies MediaPipe as author and declares Apache License 2.0.
+The unmodified model is bundled with this application; see MOBILENET_LICENSE.txt.
